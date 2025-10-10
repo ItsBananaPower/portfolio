@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio – Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>My Portfolio</h1>
+      <div class="identity">
+        <h2>MARSAA Baptiste</h2>
+        <p>Computer Science Student</p>
+      </div>
+    </div>
+    <p class="subtitle">Web Development & Software Engineering Projects</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a computer science student passionate about web development, software engineering, and exploring new
+      technologies.
+      I enjoy learning by building projects and collaborating with others.<br><br>
+
+      I’m a second-year student pursuing a Bachelor’s degree in Computer Science, with a strong interest in software
+      development, system logic,
+      and using technology to solve real-world problems.<br><br>
+
+      I previously earned a DUT in Electrical and Industrial Computer Engineering (GEII), which gave me a solid
+      foundation in both hardware and software systems.
+      My academic path reflects my curiosity and drive to understand how things work, from circuits to code.<br><br>
+      Alongside my studies, I gained two years of experience in the restaurant industry (bartender, head waiter). These
+      experiences strengthened my teamwork, communication,
+      and stress management skills.<br><br>
+
+      I’m now looking to apply my technical and interpersonal skills in meaningful projects, through an internship from
+      April 6, 2026, until June 15, 2026 </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>🐍 Python</li>
+      <li>💻 C++</li>
+      <li>⚡ JavaScript</li>
+      <li>🧱 HTML</li>
+      <li>🎨 CSS</li>
+      <li>💾 SQL</li>
+      <li>🖥️ Qt</li>
+      <li>🌐 Marionnet</li>
+      <li>🎨 Figma</li>
+      <li>📊 GanttProject</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-box" onclick="toggleProject(this)">
+      <div class="project-header">
+        <h3>AgendSup</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="project-content">
+        <p><strong>Description:</strong> A collaborative digital planner designed for students to share homework and
+          organize online study rooms. Focused on project management using Figma and GanttProject.</p>
+        <p><strong>Team:</strong> 5 members</p>
+        <img src="images/agendsup.png" alt="AgendSup screenshot" />
+      </div>
+    </div>
+
+    <div class="project-box" onclick="toggleProject(this)">
+      <div class="project-header">
+        <h3>Database Analysis</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="project-content">
+        <p><strong>Description:</strong> Study and exploration of a provided database using SQL Developer. Learned to
+          analyze structure and improve relational understanding.</p>
+        <p><strong>Team:</strong> 2 members</p>
+        <img src="images/database.png" alt="Database screenshot" />
+      </div>
+    </div>
+
+    <div class="project-box" onclick="toggleProject(this)">
+      <div class="project-header">
+        <h3>Virtual Radio Station</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="project-content">
+        <p><strong>Description:</strong> Built in C++ (Qt), this app manages albums through a music database. Focus on
+          OOP and data manipulation.</p>
+        <p><strong>Team:</strong> 5 members</p>
+        <img src="images/virtual_radio.jpg" alt="Virtual Radio screenshot" />
+      </div>
+    </div>
+
+    <div class="project-box" onclick="toggleProject(this)">
+      <div class="project-header">
+        <h3>Virtual Network Simulation</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="project-content">
+        <p><strong>Description:</strong> Designed virtual subnets with Marionnet, managing isolated and connected
+          networks for topology learning.</p>
+        <p><strong>Team:</strong> 2 members</p>
+        <img src="images/network.png" alt="Network Simulation screenshot" />
+      </div>
+    </div>
+
+    <div class="project-box" onclick="toggleProject(this)">
+      <div class="project-header">
+        <h3>AgendSup – Web Development</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="project-content">
+        <p><strong>Description:</strong> Current development phase of AgendSup: implementing web features using HTML,
+          CSS, and JS.</p>
+        <p><strong>Team:</strong> 5 members</p>
+        <img src="images/agendsup_web.png" alt="AgendSup Web screenshot" />
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education & Career Path</h2>
+    <div class="timeline-horizontal">
+      <div class="timeline-step">
+        <div class="step-circle">Bac</div>
+        <p class="step-title">STI2D option SIN</p>
+        <p class="step-date">2018-2020</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">DUT</div>
+        <p class="step-title">Electrical & Industrial Computer Engineering</p>
+        <p class="step-date">2020-2022</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Restauration</div>
+        <p class="step-title">Bartender / Head Waiter</p>
+        <p class="step-date">2022-2024</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">BUT</div>
+        <p class="step-title">Bachelor of Technology in Computer Science</p>
+        <p class="step-date">2024-Present</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> marsaa.baptiste@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/ItsBananaPower"
+        target="_blank">github.com/ItsBananaPower</a>
+    </p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marsaabaptiste"
+        target="_blank">linkedin.com/in/marsaabaptiste</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

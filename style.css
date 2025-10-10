@@ -1,0 +1,253 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+main,
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+header h1 {
+  color: #80cbc4;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.identity h2 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.identity p {
+  margin: 5px 0;
+  color: #b0b0b0;
+}
+
+.subtitle {
+  color: #a0a0a0;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.skills-list li {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list li img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.skills-list li:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-3px);
+}
+
+/* Projects */
+.project-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+.project-header h3 {
+  margin: 0;
+}
+
+.project-header .arrow {
+  color: #80cbc4;
+  font-size: 1.4em;
+  transition: transform 0.3s ease;
+}
+
+.project-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  padding: 0 30px;
+}
+
+.project-content.open {
+  padding: 25px 30px;
+}
+
+.project-content img {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+/*Education*/
+.timeline-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 60px 0;
+}
+
+.timeline-horizontal::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #1e1e1e;
+  border: 2px solid #80cbc4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #80cbc4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px 0;
+}
+
+/* Hover effet */
+.timeline-step:hover .step-circle {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Alternance rond au-dessus / au-dessous du texte */
+.timeline-step:nth-child(odd) {
+  flex-direction: column;
+}
+
+.timeline-step:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.timeline-step p {
+  color: #b0b0b0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.timeline-step p {
+  margin: 4px 0;
+  font-size: 0.9em;
+  color: #b0b0b0;
+}
+
+.step-title {
+  font-weight: 600;
+}
+
+.step-date {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Alternance cercle au-dessus / dessous du texte */
+.timeline-step:nth-child(odd) {
+  flex-direction: column;
+}
+
+.timeline-step:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 40px 20px 80px 20px;
+}
+
+.contact a {
+  color: #80cbc4;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 1px solid #80cbc4;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact a:hover {
+  background-color: #80cbc4;
+  color: #121212;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  main,
+  section {
+    padding: 0 20px;
+  }
+
+  .project-header,
+  .project-content {
+    padding: 15px 20px;
+  }
+}
