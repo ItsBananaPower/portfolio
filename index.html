@@ -12,23 +12,33 @@
 </head>
 
 <body>
+  <div class="lang-switch">
+    <button id="lang-btn">Français</button>
+  </div>
+
   <header>
     <div class="header-content">
       <div class="identity">
         <h1>MARSAA Baptiste</h1>
-        <p>Computer Science Student</p>
+        <p data-en="Computer Science Student" data-fr="Étudiant en BUT Informatique">Computer Science Student</p>
       </div>
     </div>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Second-year student, curious and thorough, with experience in collaborative web development projects.</p>
-    <p>I am looking for a 10-week IT developer internship starting on April 6, 2026. </p>
+    <h2 data-en="About Me" data-fr="À propos de moi">About Me</h2>
+    <p data-en="Second-year student, curious and thorough, with experience in collaborative web development projects." 
+       data-fr="Étudiant en deuxième année, curieux et rigoureux, avec de l'expérience dans des projets collaboratifs de développement web.">
+       Second-year student, curious and thorough, with experience in collaborative web development projects.
+    </p>
+    <p data-en="I am looking for a 10-week IT developer internship starting on April 6, 2026." 
+       data-fr="Je recherche un stage de développeur informatique de 10 semaines à partir du 6 avril 2026.">
+       I am looking for a 10-week IT developer internship starting on April 6, 2026. 
+    </p>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
+    <h2 data-en="Skills" data-fr="Compétences">Skills</h2>
     <ul class="skills-list">
       <li>🐍 Python</li>
       <li>💻 C++</li>
@@ -44,7 +54,7 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2 data-en="Projects" data-fr="Projets">Projects</h2>
 
     <div class="project-box" onclick="toggleProject(this)">
       <div class="project-header">
@@ -52,95 +62,115 @@
         <span class="arrow">▼</span>
       </div>
       <div class="project-content">
-        <p><strong>Description:</strong> A collaborative digital planner designed for students to share homework and
-          organize online study rooms. Focused on project management using Figma and GanttProject.</p>
-        <p><strong>Team:</strong> 5 members</p>
+        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
+           <span data-en="A collaborative digital planner designed for students to share homework and organize online study rooms. Focused on project management using Figma and GanttProject."
+                 data-fr="Un agenda numérique collaboratif conçu pour que les étudiants partagent leurs devoirs et organisent des salles d'étude en ligne. Axé sur la gestion de projet avec Figma et GanttProject.">
+           A collaborative digital planner designed for students to share homework and organize online study rooms. Focused on project management using Figma and GanttProject.
+           </span>
+        </p>
+        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="5 members" data-fr="5 membres">5 members</span></p>
         <img src="images/agendsup.png" alt="AgendSup screenshot" />
       </div>
     </div>
 
     <div class="project-box" onclick="toggleProject(this)">
       <div class="project-header">
-        <h3>Database Analysis</h3>
+        <h3 data-en="Database Analysis" data-fr="Analyse de Base de Données">Database Analysis</h3>
         <span class="arrow">▼</span>
       </div>
       <div class="project-content">
-        <p><strong>Description:</strong> Study and exploration of a provided database using SQL Developer. Learned to
-          analyze structure and improve relational understanding.</p>
-        <p><strong>Team:</strong> 2 members</p>
+        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
+           <span data-en="Study and exploration of a provided database using SQL Developer. Learned to analyze structure and improve relational understanding."
+                 data-fr="Étude et exploration d'une base de données fournie via SQL Developer. Apprentissage de l'analyse de structure et amélioration de la compréhension relationnelle.">
+           Study and exploration of a provided database using SQL Developer. Learned to analyze structure and improve relational understanding.
+           </span>
+        </p>
+        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="2 members" data-fr="2 membres">2 members</span></p>
         <img src="images/database.png" alt="Database screenshot" />
       </div>
     </div>
 
     <div class="project-box" onclick="toggleProject(this)">
       <div class="project-header">
-        <h3>Virtual Radio Station</h3>
+        <h3 data-en="Virtual Radio Station" data-fr="Station Radio Virtuelle">Virtual Radio Station</h3>
         <span class="arrow">▼</span>
       </div>
       <div class="project-content">
-        <p><strong>Description:</strong> Built in C++ (Qt), this app manages albums through a music database. Focus on
-          OOP and data manipulation.</p>
-        <p><strong>Team:</strong> 5 members</p>
+        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
+           <span data-en="Built in C++ (Qt), this app manages albums through a music database. Focus on OOP and data manipulation."
+                 data-fr="Développée en C++ (Qt), cette application gère des albums via une base de données musicale. Axé sur la POO et la manipulation de données.">
+           Built in C++ (Qt), this app manages albums through a music database. Focus on OOP and data manipulation.
+           </span>
+        </p>
+        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="5 members" data-fr="5 membres">5 members</span></p>
         <img src="images/virtual_radio.jpg" alt="Virtual Radio screenshot" />
       </div>
     </div>
 
     <div class="project-box" onclick="toggleProject(this)">
       <div class="project-header">
-        <h3>Virtual Network Simulation</h3>
+        <h3 data-en="Virtual Network Simulation" data-fr="Simulation de Réseau Virtuel">Virtual Network Simulation</h3>
         <span class="arrow">▼</span>
       </div>
       <div class="project-content">
-        <p><strong>Description:</strong> Designed virtual subnets with Marionnet, managing isolated and connected
-          networks for topology learning.</p>
-        <p><strong>Team:</strong> 2 members</p>
+        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
+           <span data-en="Designed virtual subnets with Marionnet, managing isolated and connected networks for topology learning."
+                 data-fr="Conception de sous-réseaux virtuels avec Marionnet, gestion de réseaux isolés et connectés pour l'apprentissage des topologies.">
+           Designed virtual subnets with Marionnet, managing isolated and connected networks for topology learning.
+           </span>
+        </p>
+        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="2 members" data-fr="2 membres">2 members</span></p>
         <img src="images/network.png" alt="Network Simulation screenshot" />
       </div>
     </div>
 
     <div class="project-box" onclick="toggleProject(this)">
       <div class="project-header">
-        <h3>AgendSup – Web Development</h3>
+        <h3 data-en="AgendSup – Web Development" data-fr="AgendSup – Développement Web">AgendSup – Web Development</h3>
         <span class="arrow">▼</span>
       </div>
       <div class="project-content">
-        <p><strong>Description:</strong> Current development phase of AgendSup: implementing web features using HTML,
-          CSS, and JS.</p>
-        <p><strong>Team:</strong> 5 members</p>
+        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
+           <span data-en="Current development phase of AgendSup: implementing web features using HTML, CSS, and JS."
+                 data-fr="Phase de développement actuelle d'AgendSup : implémentation des fonctionnalités web avec HTML, CSS et JS.">
+           Current development phase of AgendSup: implementing web features using HTML, CSS, and JS.
+           </span>
+        </p>
+        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="5 members" data-fr="5 membres">5 members</span></p>
         <img src="images/agendsup_web.png" alt="AgendSup Web screenshot" />
       </div>
     </div>
   </section>
 
   <section id="education">
-    <h2>Education & Career Path</h2>
+    <h2 data-en="Education & Career Path" data-fr="Formation et Parcours">Education & Career Path</h2>
     <div class="timeline-horizontal">
       <div class="timeline-step">
         <div class="step-circle">Bac</div>
-        <p class="step-title">STI2D option SIN</p>
+        <p class="step-title" data-en="STI2D SIN option" data-fr="Bac STI2D option SIN">STI2D SIN option</p>
         <p class="step-date">2018-2020</p>
       </div>
       <div class="timeline-step">
         <div class="step-circle">DUT</div>
-        <p class="step-title">Electrical & Industrial Computer Engineering</p>
+        <p class="step-title" data-en="Electrical & Industrial Computer Engineering" data-fr="Génie Électrique et Informatique Industrielle (GEII)">Electrical & Industrial Computer Engineering</p>
         <p class="step-date">2020-2022</p>
       </div>
       <div class="timeline-step">
-        <div class="step-circle">Restauration</div>
-        <p class="step-title">Bartender / Head Waiter</p>
+        <div class="step-circle" data-en="Work" data-fr="Travail">Work</div>
+        <p class="step-title" data-en="Bartender / Head Waiter" data-fr="Barman / Chef de Rang">Bartender / Head Waiter</p>
         <p class="step-date">2022-2024</p>
       </div>
       <div class="timeline-step">
         <div class="step-circle">BUT</div>
-        <p class="step-title">Bachelor of Technology in Computer Science</p>
-        <p class="step-date">2024-Present</p>
+        <p class="step-title" data-en="Bachelor of Technology in Computer Science" data-fr="BUT Informatique">Bachelor of Technology in Computer Science</p>
+        <p class="step-date" data-en="2024-Present" data-fr="2024-Présent">2024-Present</p>
       </div>
     </div>
   </section>
 
 
   <section class="contact">
-    <h2>Contact</h2>
+    <h2 data-en="Contact" data-fr="Contact">Contact</h2>
     <p><strong>Email:</strong> marsaa.baptiste@gmail.com</p>
     <p><strong>GitHub:</strong> <a href="https://github.com/ItsBananaPower"
         target="_blank">github.com/ItsBananaPower</a>

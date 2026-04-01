@@ -1,3 +1,16 @@
+const langBtn = document.getElementById('lang-btn');
+let currentLang = 'en';
+
+langBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'fr' : 'en';
+    
+    langBtn.innerText = currentLang === 'en' ? 'Français' : 'English';
+    
+    document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerText = el.getAttribute(`data-${currentLang}`);
+    });
+});
+
 function toggleProject(element) {
     const content = element.querySelector(".project-content");
     const arrow = element.querySelector(".arrow");
