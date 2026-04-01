@@ -1,185 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <title>MARSAA Baptiste</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Baptiste MARSAA — Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
+  <!-- Language Switch -->
   <div class="lang-switch">
-    <button id="lang-btn">Français</button>
+    <button id="lang-btn" aria-label="Switch language">
+      <span class="lang-icon">🌐</span>
+      <span id="lang-label">FR</span>
+    </button>
   </div>
 
-  <header>
-    <div class="header-content">
-      <div class="identity">
-        <h1>MARSAA Baptiste</h1>
-        <p data-en="Computer Science Student" data-fr="Étudiant en BUT Informatique">Computer Science Student</p>
+  <!-- Floating CTA -->
+  <a href="CV_MB.pdf" download="CV_MB.pdf" class="cta-float" id="cta-float">
+  <span class="cta-icon">↓</span>
+  <span class="cta-text" data-en="Download CV" data-fr="Télécharger CV">Download CV</span>
+</a>
+
+  <!-- Hero -->
+  <header id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal" data-en="Available for internship · April 2026" data-fr="Disponible pour stage · Avril 2026">Available for internship · April 2026</p>
+      <h1 class="reveal reveal-delay-1">Baptiste<br><span class="name-accent">MARSAA</span></h1>
+      <div class="hero-tagline reveal reveal-delay-2">
+        <span class="typewriter" id="typewriter"></span>
       </div>
+      <p class="hero-desc reveal reveal-delay-3"
+         data-en="2nd-year Computer Science student · Polyvalent developer (C++, Python, Web, SQL, Networks) · Seeking a 10-week internship starting April 6, 2026"
+         data-fr="Étudiant en 2ème année de BUT Informatique · Développeur polyvalent (C++, Python, Web, SQL, Réseaux) · Recherche un stage de 10 semaines à partir du 6 avril 2026">
+        2nd-year Computer Science student · Polyvalent developer (C++, Python, Web, SQL, Networks) · Seeking a 10-week internship starting April 6, 2026
+      </p>
+      <div class="hero-actions reveal reveal-delay-4">
+        <a href="#contact" class="btn-primary" data-en="Let's connect" data-fr="Me contacter">Let's connect</a>
+        <a href="#projects" class="btn-ghost" data-en="See my work" data-fr="Voir mes projets">See my work</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
     </div>
   </header>
 
-  <section id="about">
-    <h2 data-en="About Me" data-fr="À propos de moi">About Me</h2>
-    <p data-en="Second-year student, curious and thorough, with experience in collaborative web development projects." 
-       data-fr="Étudiant en deuxième année, curieux et rigoureux, avec de l'expérience dans des projets collaboratifs de développement web.">
-       Second-year student, curious and thorough, with experience in collaborative web development projects.
-    </p>
-    <p data-en="I am looking for a 10-week IT developer internship starting on April 6, 2026." 
-       data-fr="Je recherche un stage de développeur informatique de 10 semaines à partir du 6 avril 2026.">
-       I am looking for a 10-week IT developer internship starting on April 6, 2026. 
-    </p>
-  </section>
-
+  <!-- Skills -->
   <section id="skills">
-    <h2 data-en="Skills" data-fr="Compétences">Skills</h2>
-    <ul class="skills-list">
-      <li>🐍 Python</li>
-      <li>💻 C++</li>
-      <li>⚡ JavaScript</li>
-      <li>🧱 HTML</li>
-      <li>🎨 CSS</li>
-      <li>💾 SQL</li>
-      <li>🖥️ Qt</li>
-      <li>🌐 Marionnet</li>
-      <li>🎨 Figma</li>
-      <li>📊 GanttProject</li>
-    </ul>
+    <div class="section-inner">
+      <p class="section-label reveal" data-en="What I work with" data-fr="Mes outils">What I work with</p>
+      <h2 class="reveal" data-en="Skills" data-fr="Compétences">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon">🐍</div>
+          <span>Python</span>
+        </div>
+        <div class="skill-card reveal" data-delay="50">
+          <div class="skill-icon">💻</div>
+          <span>C++</span>
+        </div>
+        <div class="skill-card reveal" data-delay="100">
+          <div class="skill-icon">⚡</div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card reveal" data-delay="150">
+          <div class="skill-icon">🧱</div>
+          <span>HTML</span>
+        </div>
+        <div class="skill-card reveal" data-delay="200">
+          <div class="skill-icon">🎨</div>
+          <span>CSS</span>
+        </div>
+        <div class="skill-card reveal" data-delay="250">
+          <div class="skill-icon">💾</div>
+          <span>SQL</span>
+        </div>
+        <div class="skill-card reveal" data-delay="300">
+          <div class="skill-icon">🖥️</div>
+          <span>Qt / C++</span>
+        </div>
+        <div class="skill-card reveal" data-delay="350">
+          <div class="skill-icon">🌐</div>
+          <span>Marionnet</span>
+        </div>
+        <div class="skill-card reveal" data-delay="400">
+          <div class="skill-icon">🎨</div>
+          <span>Figma</span>
+        </div>
+        <div class="skill-card reveal" data-delay="450">
+          <div class="skill-icon">📊</div>
+          <span>GanttProject</span>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
-    <h2 data-en="Projects" data-fr="Projets">Projects</h2>
+    <div class="section-inner">
+      <p class="section-label reveal" data-en="What I've built" data-fr="Ce que j'ai réalisé">What I've built</p>
+      <h2 class="reveal" data-en="Projects" data-fr="Projets">Projects</h2>
+      <div class="projects-grid">
 
-    <div class="project-box" onclick="toggleProject(this)">
-      <div class="project-header">
-        <h3>AgendSup</h3>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="project-content">
-        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
-           <span data-en="A collaborative digital planner designed for students to share homework and organize online study rooms. Focused on project management using Figma and GanttProject."
-                 data-fr="Un agenda numérique collaboratif conçu pour que les étudiants partagent leurs devoirs et organisent des salles d'étude en ligne. Axé sur la gestion de projet avec Figma et GanttProject.">
-           A collaborative digital planner designed for students to share homework and organize online study rooms. Focused on project management using Figma and GanttProject.
-           </span>
-        </p>
-        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="5 members" data-fr="5 membres">5 members</span></p>
-        <img src="images/agendsup.png" alt="AgendSup screenshot" />
-      </div>
-    </div>
+        <article id="project-agendsup" class="project-card reveal" data-delay="0">
+          <div class="project-card-inner">
+            <div class="project-img-wrap">
+              <img src="images/agendsup.png" alt="AgendSup screenshot" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge badge-design">Figma</span>
+                <span class="badge badge-pm">GanttProject</span>
+                <span class="badge badge-team">Team ×5</span>
+              </div>
+              <h3>AgendSup</h3>
+              <p data-en="Designed a collaborative student planner from scratch — led UX workshops with Figma, produced a full project roadmap with GanttProject, and delivered a functional prototype that centralizes homework sharing and online study rooms for a team of 5."
+                 data-fr="Conçu un agenda collaboratif étudiant de zéro — animation d'ateliers UX sous Figma, production d'un planning complet avec GanttProject, et livraison d'un prototype fonctionnel centralisant le partage de devoirs et les salles d'étude pour une équipe de 5.">
+                Designed a collaborative student planner from scratch — led UX workshops with Figma, produced a full project roadmap with GanttProject, and delivered a functional prototype that centralizes homework sharing and online study rooms for a team of 5.
+              </p>
+            </div>
+          </div>
+        </article>
 
-    <div class="project-box" onclick="toggleProject(this)">
-      <div class="project-header">
-        <h3 data-en="Database Analysis" data-fr="Analyse de Base de Données">Database Analysis</h3>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="project-content">
-        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
-           <span data-en="Study and exploration of a provided database using SQL Developer. Learned to analyze structure and improve relational understanding."
-                 data-fr="Étude et exploration d'une base de données fournie via SQL Developer. Apprentissage de l'analyse de structure et amélioration de la compréhension relationnelle.">
-           Study and exploration of a provided database using SQL Developer. Learned to analyze structure and improve relational understanding.
-           </span>
-        </p>
-        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="2 members" data-fr="2 membres">2 members</span></p>
-        <img src="images/database.png" alt="Database screenshot" />
-      </div>
-    </div>
+        <article id="project-database" class="project-card reveal" data-delay="80">
+          <div class="project-card-inner">
+            <div class="project-img-wrap">
+              <img src="images/database.png" alt="Database Analysis screenshot" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge badge-db">SQL</span>
+                <span class="badge badge-db">SQL Developer</span>
+                <span class="badge badge-team">Team ×2</span>
+              </div>
+              <h3 data-en="Database Analysis" data-fr="Analyse de Base de Données">Database Analysis</h3>
+              <p data-en="Analysed a complex relational database with SQL Developer — reverse-engineered the entity-relationship model, wrote optimized queries, and produced a structured report that clarified data flows and identified normalization gaps."
+                 data-fr="Analyse d'une base de données relationnelle complexe avec SQL Developer — rétro-ingénierie du modèle entité-relation, rédaction de requêtes optimisées, et production d'un rapport structuré clarifiant les flux de données et identifiant les manques de normalisation.">
+                Analysed a complex relational database with SQL Developer — reverse-engineered the entity-relationship model, wrote optimized queries, and produced a structured report that clarified data flows and identified normalization gaps.
+              </p>
+            </div>
+          </div>
+        </article>
 
-    <div class="project-box" onclick="toggleProject(this)">
-      <div class="project-header">
-        <h3 data-en="Virtual Radio Station" data-fr="Station Radio Virtuelle">Virtual Radio Station</h3>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="project-content">
-        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
-           <span data-en="Built in C++ (Qt), this app manages albums through a music database. Focus on OOP and data manipulation."
-                 data-fr="Développée en C++ (Qt), cette application gère des albums via une base de données musicale. Axé sur la POO et la manipulation de données.">
-           Built in C++ (Qt), this app manages albums through a music database. Focus on OOP and data manipulation.
-           </span>
-        </p>
-        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="5 members" data-fr="5 membres">5 members</span></p>
-        <img src="images/virtual_radio.jpg" alt="Virtual Radio screenshot" />
-      </div>
-    </div>
+        <article id="project-radio" class="project-card reveal" data-delay="160">
+          <div class="project-card-inner">
+            <div class="project-img-wrap">
+              <img src="images/virtual_radio.jpg" alt="Virtual Radio screenshot" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge badge-cpp">C++</span>
+                <span class="badge badge-cpp">Qt</span>
+                <span class="badge badge-team">Team ×5</span>
+              </div>
+              <h3 data-en="Virtual Radio Station" data-fr="Station Radio Virtuelle">Virtual Radio Station</h3>
+              <p data-en="Built a full-featured music management app in C++ with Qt — designed an OOP class hierarchy for albums, artists, and playlists, connected a persistent SQL database, and delivered a polished GUI handling thousands of records."
+                 data-fr="Développé une application complète de gestion musicale en C++ avec Qt — conception d'une hiérarchie de classes orientée objet pour albums, artistes et playlists, connexion à une base SQL persistante, et livraison d'une interface graphique gérant des milliers d'enregistrements.">
+                Built a full-featured music management app in C++ with Qt — designed an OOP class hierarchy for albums, artists, and playlists, connected a persistent SQL database, and delivered a polished GUI handling thousands of records.
+              </p>
+            </div>
+          </div>
+        </article>
 
-    <div class="project-box" onclick="toggleProject(this)">
-      <div class="project-header">
-        <h3 data-en="Virtual Network Simulation" data-fr="Simulation de Réseau Virtuel">Virtual Network Simulation</h3>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="project-content">
-        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
-           <span data-en="Designed virtual subnets with Marionnet, managing isolated and connected networks for topology learning."
-                 data-fr="Conception de sous-réseaux virtuels avec Marionnet, gestion de réseaux isolés et connectés pour l'apprentissage des topologies.">
-           Designed virtual subnets with Marionnet, managing isolated and connected networks for topology learning.
-           </span>
-        </p>
-        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="2 members" data-fr="2 membres">2 members</span></p>
-        <img src="images/network.png" alt="Network Simulation screenshot" />
-      </div>
-    </div>
+        <article id="project-network" class="project-card reveal" data-delay="240">
+          <div class="project-card-inner">
+            <div class="project-img-wrap">
+              <img src="images/network.png" alt="Network Simulation screenshot" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge badge-net">Marionnet</span>
+                <span class="badge badge-net">TCP/IP</span>
+                <span class="badge badge-team">Team ×2</span>
+              </div>
+              <h3 data-en="Virtual Network Simulation" data-fr="Simulation de Réseau Virtuel">Virtual Network Simulation</h3>
+              <p data-en="Simulated multi-subnet network architectures with Marionnet — configured routers, switches, and virtual hosts to model both isolated and interconnected topologies, then documented the IP plan and tested cross-segment communication."
+                 data-fr="Simulation d'architectures réseau multi-sous-réseaux avec Marionnet — configuration de routeurs, switches et hôtes virtuels pour modéliser des topologies isolées et interconnectées, puis documentation du plan IP et test des communications inter-segments.">
+                Simulated multi-subnet network architectures with Marionnet — configured routers, switches, and virtual hosts to model both isolated and interconnected topologies, then documented the IP plan and tested cross-segment communication.
+              </p>
+            </div>
+          </div>
+        </article>
 
-    <div class="project-box" onclick="toggleProject(this)">
-      <div class="project-header">
-        <h3 data-en="AgendSup – Web Development" data-fr="AgendSup – Développement Web">AgendSup – Web Development</h3>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="project-content">
-        <p><strong data-en="Description:" data-fr="Description :">Description:</strong> 
-           <span data-en="Current development phase of AgendSup: implementing web features using HTML, CSS, and JS."
-                 data-fr="Phase de développement actuelle d'AgendSup : implémentation des fonctionnalités web avec HTML, CSS et JS.">
-           Current development phase of AgendSup: implementing web features using HTML, CSS, and JS.
-           </span>
-        </p>
-        <p><strong data-en="Team:" data-fr="Équipe :">Team:</strong> <span data-en="5 members" data-fr="5 membres">5 members</span></p>
-        <img src="images/agendsup_web.png" alt="AgendSup Web screenshot" />
+        <article id="project-web" class="project-card reveal" data-delay="320">
+          <div class="project-card-inner">
+            <div class="project-img-wrap">
+              <img src="images/agendsup_web.png" alt="AgendSup Web screenshot" loading="lazy" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge badge-web">HTML</span>
+                <span class="badge badge-web">CSS</span>
+                <span class="badge badge-web">JavaScript</span>
+                <span class="badge badge-team">Team ×5</span>
+              </div>
+              <h3 data-en="AgendSup – Web Development" data-fr="AgendSup – Développement Web">AgendSup – Web Development</h3>
+              <p data-en="Translated the AgendSup prototype into a live web application — implemented dynamic UI components with vanilla JS, handled form validation and real-time state management, and collaborated across 5 developers using Git version control."
+                 data-fr="Transposition du prototype AgendSup en application web — implémentation de composants UI dynamiques en JS vanilla, gestion de la validation de formulaires et du state en temps réel, et collaboration entre 5 développeurs avec Git.">
+                Translated the AgendSup prototype into a live web application — implemented dynamic UI components with vanilla JS, handled form validation and real-time state management, and collaborated across 5 developers using Git version control.
+              </p>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
+  <!-- Soft Skills -->
+  <section id="softskills">
+    <div class="section-inner">
+      <p class="section-label reveal" data-en="Beyond the code" data-fr="Au-delà du code">Beyond the code</p>
+      <h2 class="reveal" data-en="Soft Skills" data-fr="Savoir-être">Soft Skills</h2>
+      <p class="section-intro reveal"
+         data-en="Before becoming a developer, I spent 2 years as a Bartender and Head Waiter. This built non-negotiable professional habits that I bring into every project."
+         data-fr="Avant de devenir développeur, j'ai passé 2 ans comme barman et chef de rang. Cette expérience m'a forgé des habitudes professionnelles non-négociables que j'apporte dans chaque projet.">
+        Before becoming a developer, I spent 2 years as a Bartender and Head Waiter. This built non-negotiable professional habits that I bring into every project.
+      </p>
+      <div class="softskills-grid">
+        <div class="softskill-card reveal" data-delay="0">
+          <div class="softskill-icon">⚡</div>
+          <h4 data-en="Stress Management" data-fr="Gestion du stress">Stress Management</h4>
+          <p data-en="Operated in high-pressure service environments with 80+ covers — trained to stay precise and calm when deadlines hit."
+             data-fr="Travail dans des environnements à forte pression avec 80+ couverts — entraîné à rester précis et calme face aux délais serrés.">
+            Operated in high-pressure service environments with 80+ covers — trained to stay precise and calm when deadlines hit.
+          </p>
+        </div>
+        <div class="softskill-card reveal" data-delay="100">
+          <div class="softskill-icon">🤝</div>
+          <h4 data-en="Team Coordination" data-fr="Coordination d'équipe">Team Coordination</h4>
+          <p data-en="Coordinated front-of-house teams in real time — the same skill that helps me sync on Git branches, code reviews, and agile standups."
+             data-fr="Coordination d'équipes en temps réel — la même compétence qui me permet de synchroniser branches Git, code reviews et standups agiles.">
+            Coordinated front-of-house teams in real time — the same skill that helps me sync on Git branches, code reviews, and agile standups.
+          </p>
+        </div>
+        <div class="softskill-card reveal" data-delay="200">
+          <div class="softskill-icon">🎯</div>
+          <h4 data-en="Attention to Detail" data-fr="Rigueur">Attention to Detail</h4>
+          <p data-en="In hospitality, one detail wrong ruins the experience. I carry the same standard into code quality, documentation, and testing."
+             data-fr="En restauration, un détail raté gâche l'expérience. J'applique le même standard à la qualité du code, la documentation et les tests.">
+            In hospitality, one detail wrong ruins the experience. I carry the same standard into code quality, documentation, and testing.
+          </p>
+        </div>
+        <div class="softskill-card reveal" data-delay="300">
+          <div class="softskill-icon">🔄</div>
+          <h4 data-en="Adaptability" data-fr="Adaptabilité">Adaptability</h4>
+          <p data-en="Switched careers to follow my passion for tech — demonstrating genuine commitment, continuous learning, and resilience."
+             data-fr="Reconversion professionnelle choisie pour suivre ma passion pour la tech — témoignant d'un engagement sincère, d'apprentissage continu et de résilience.">
+            Switched careers to follow my passion for tech — demonstrating genuine commitment, continuous learning, and resilience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
   <section id="education">
-    <h2 data-en="Education & Career Path" data-fr="Formation et Parcours">Education & Career Path</h2>
-    <div class="timeline-horizontal">
-      <div class="timeline-step">
-        <div class="step-circle">Bac</div>
-        <p class="step-title" data-en="STI2D SIN option" data-fr="Bac STI2D option SIN">STI2D SIN option</p>
-        <p class="step-date">2018-2020</p>
-      </div>
-      <div class="timeline-step">
-        <div class="step-circle">DUT</div>
-        <p class="step-title" data-en="Electrical & Industrial Computer Engineering" data-fr="Génie Électrique et Informatique Industrielle (GEII)">Electrical & Industrial Computer Engineering</p>
-        <p class="step-date">2020-2022</p>
-      </div>
-      <div class="timeline-step">
-        <div class="step-circle" data-en="Work" data-fr="Travail">Work</div>
-        <p class="step-title" data-en="Bartender / Head Waiter" data-fr="Barman / Chef de Rang">Bartender / Head Waiter</p>
-        <p class="step-date">2022-2024</p>
-      </div>
-      <div class="timeline-step">
-        <div class="step-circle">BUT</div>
-        <p class="step-title" data-en="Bachelor of Technology in Computer Science" data-fr="BUT Informatique">Bachelor of Technology in Computer Science</p>
-        <p class="step-date" data-en="2024-Present" data-fr="2024-Présent">2024-Present</p>
+    <div class="section-inner">
+      <p class="section-label reveal" data-en="My path" data-fr="Mon parcours">My path</p>
+      <h2 class="reveal" data-en="Education & Career" data-fr="Formation & Parcours">Education & Career</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal" data-delay="0">
+          <div class="timeline-dot">
+            <span>Bac</span>
+          </div>
+          <div class="timeline-content">
+            <p class="tl-date">2018 – 2020</p>
+            <h4 data-en="STI2D – SIN Option" data-fr="Bac STI2D – option SIN">STI2D – SIN Option</h4>
+            <p data-en="Technology baccalaureate specializing in digital information systems."
+               data-fr="Baccalauréat technologique spécialisation systèmes d'information numérique.">
+               Technology baccalaureate specializing in digital information systems.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="100">
+          <div class="timeline-dot">
+            <span>DUT</span>
+          </div>
+          <div class="timeline-content">
+            <p class="tl-date">2020 – 2022</p>
+            <h4 data-en="Electrical & Industrial Computer Engineering (GEII)" data-fr="Génie Électrique et Informatique Industrielle (GEII)">Electrical & Industrial Computer Engineering (GEII)</h4>
+            <p data-en="Systems architecture, embedded programming, electronics fundamentals."
+               data-fr="Architecture des systèmes, programmation embarquée, fondamentaux de l'électronique.">
+               Systems architecture, embedded programming, electronics fundamentals.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="200">
+          <div class="timeline-dot">
+            <span>🍸</span>
+          </div>
+          <div class="timeline-content">
+            <p class="tl-date">2022 – 2024</p>
+            <h4 data-en="Bartender / Head Waiter" data-fr="Barman / Chef de Rang">Bartender / Head Waiter</h4>
+            <p data-en="2 years of professional experience — stress management, client relations, team leadership."
+               data-fr="2 ans d'expérience professionnelle — gestion du stress, relation client, encadrement d'équipe.">
+               2 years of professional experience — stress management, client relations, team leadership.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal active" data-delay="300">
+          <div class="timeline-dot">
+            <span>BUT</span>
+          </div>
+          <div class="timeline-content">
+            <p class="tl-date" data-en="2024 – Present" data-fr="2024 – Présent">2024 – Present</p>
+            <h4 data-en="Bachelor of Technology – Computer Science" data-fr="BUT Informatique">Bachelor of Technology – Computer Science</h4>
+            <p data-en="Full-stack development, databases, networks, software engineering. Seeking internship April 2026."
+               data-fr="Développement full-stack, bases de données, réseaux, génie logiciel. Recherche de stage en avril 2026.">
+               Full-stack development, databases, networks, software engineering. Seeking internship April 2026.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-
-  <section class="contact">
-    <h2 data-en="Contact" data-fr="Contact">Contact</h2>
-    <p><strong>Email:</strong> marsaa.baptiste@gmail.com</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/ItsBananaPower"
-        target="_blank">github.com/ItsBananaPower</a>
-    </p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marsaabaptiste"
-        target="_blank">linkedin.com/in/marsaabaptiste</a></p>
+  <!-- Contact / CTA -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <p class="section-label reveal" data-en="Let's work together" data-fr="Travaillons ensemble">Let's work together</p>
+      <h2 class="reveal" data-en="Get in touch" data-fr="Me contacter">Get in touch</h2>
+      <p class="contact-desc reveal"
+         data-en="I'm available for a 10-week internship starting April 6, 2026. Whether you have a project, a question, or just want to say hello — I'd love to hear from you."
+         data-fr="Je suis disponible pour un stage de 10 semaines à partir du 6 avril 2026. Que vous ayez un projet, une question ou juste envie de discuter — je serai ravi d'échanger.">
+        I'm available for a 10-week internship starting April 6, 2026. Whether you have a project, a question, or just want to say hello — I'd love to hear from you.
+      </p>
+      <div class="contact-links reveal reveal-delay-1">
+        <a href="mailto:marsaa.baptiste@gmail.com" class="contact-link">
+          <span class="contact-link-icon">✉</span>
+          marsaa.baptiste@gmail.com
+        </a>
+        <a href="https://github.com/ItsBananaPower" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-icon">⌥</span>
+          github.com/ItsBananaPower
+        </a>
+        <a href="https://www.linkedin.com/in/marsaabaptiste" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-icon">in</span>
+          linkedin.com/in/marsaabaptiste
+        </a>
+      </div>
+      <a href="CV_MB.pdf" download="CV_MB.pdf" class="btn-primary btn-large reveal reveal-delay-2" data-en="↓ Download my CV" data-fr="↓ Télécharger mon CV">↓ Download my CV</a>    
+    </div>
   </section>
+
+  <footer>
+    <p data-en="Crafted with care by Baptiste MARSAA · 2026" data-fr="Conçu avec soin par Baptiste MARSAA · 2026">Crafted with care by Baptiste MARSAA · 2026</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
